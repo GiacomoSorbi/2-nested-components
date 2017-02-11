@@ -23,13 +23,15 @@
   to { transform: rotate(360deg); }
 }
 
-.rectangular {
-  background-color: #555;
+.container {
+  display: inline-block;
+  background-color: #f99;
   height: 200px;
-  width: 200px;
+  min-width: 200px;
 }
 
-.circular {
+.circle {
+  display: inline-block;
   background-color: #8a8;
   height: 200px;
   width: 200px;
