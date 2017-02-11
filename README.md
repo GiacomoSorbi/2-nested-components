@@ -8,46 +8,36 @@ Clone this repository and use `npm start` in your terminal to make it start
 
 ## Activities and Objectives
 
-You are tasked to simply create a typical "hello world" app in React.js.
+You are tasked to make your first component-based app in React.js.
 
-Feel free to use whatever HMTL elements you wish to use in your 'render()' method, just remember that if you use multiple ones, you need to wrap them all, as you can return only a single ancestor element (albeit with as many child element as you want).
+You need to create and manage an app with a pink Container component and to put (at least) a Circle component inside it.
 
 Examples:
 
 ```
-//good
+//just one, Container would most likely be a square if you allow it with his CSS
 ReactDOM.render(
-  <div>
-    Hello, world!
-  </div>,
+  <Container>
+    <Circle />
+  </Container>,
   document.getElementById('app')
 );
 ```
 
 ```
-//bad
+//three Circles, Container would most likely be a square if you allow it with his CSS
 ReactDOM.render(
-  <h3>
-    Hello, world!
-  </h3>
-  <p>
-    I am Johnny
-  </p>,
+  <Container>
+    <Circle />
+    <Circle />
+    <Circle />
+  </Container>,
   document.getElementById('app')
 );
 ```
 
-```
-//good again
-ReactDOM.render(
-  <div>
-    <h3>
-        Hello, world!
-    </h3>
-    <p>
-      I am Johnny
-    </p>
-  </div>,
-  document.getElementById('app')
-);
-```
+## Extra notes and tips
+
+Feel free to play with CSS.
+
+Ask yourself if there are maybe better ways to deal with a variable amount of `Circle`s inside the container.
