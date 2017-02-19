@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Container from './Container.js';
 
-class App extends Component {
+class Container extends Component {
   render() {
     return (
         <div className="container"></div>
@@ -10,4 +9,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Container;
