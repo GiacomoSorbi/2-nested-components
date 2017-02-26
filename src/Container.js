@@ -5,9 +5,9 @@ import './App.css';
 class Container extends Component {
   render() {
     return (
-        <div className="container">
-          <Circle />
-        </div>
+      <div className="container">
+        <Circle />
+      </div>
     );
   }
 }
